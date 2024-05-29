@@ -1,189 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-  <title>Air Data</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <title>Heuristic Functions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'><link rel="stylesheet" href="CSS/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
 <body>
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" height="30px" width="30px" alt="Global">
-            <p>Surabaya Air Pollution</p>
-          </a>
-          <button class="header--cta cta">Learn More</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Types of Pollution</span></li>
-            <li><span>What is AQI?</span></li>
-            <li><span>Weather Map</span></li>
-            <li><span>How to</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Environmental<br>Air Pollution<br>@ Surabaya</h1>
-                <button class="cta">Learn More
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/Pollution.png" alt="Welcome" height="450px" width="450px">
-              </div>
-              <div class="intro--options">
-                <a href="https://www.um-surabaya.ac.id/en/article/dosen-um-surabaya-paparkan-dampak-polusi-udara-bagi-lansia">
-                  <h3>UM Surabaya Lecturer Explains the Impact of Air Pollution on the Elderly</h3>
-                  <p>Click me to read more</p>
-                </a>
-                <a href="https://www.ngopibareng.id/read/iq-air-kualitas-udara-surabaya-tidak-sehat-benowo-terburuk">
-                  <h3>IQ Air: Kualitas Udara Surabaya Tidak Sehat, Benowo Terburuk</h3>
-                  <p>Click me to read more</p>
-                </a>
-                <a href="https://www.kompas.id/baca/english/2023/09/21/en-polusi-udara-perpendek-usia-warga-kota-43-tahun">
-                  <h3>Air Pollution Shortens the Lives of City Residents by 4.3 Years</h3>
-                  <p>Click me to learn more</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>5 Types Of Pollution</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="PM.html">
-                      <div class="slider--item-image">
-                        <img src="assets/img/PM.png" alt="Particulate">
-                      </div>
-                      <p class="slider--item-title">Particulate matter (PM10 and PM2.5)</p>
-                      <p class="slider--item-description">Click to learn more</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="Ozone.html">
-                      <div class="slider--item-image">
-                        <img src="assets/img/Ozone.png" alt="Ozone">
-                      </div>
-                      <p class="slider--item-title">Ozone (O3)</p>
-                      <p class="slider--item-description">Click to learn more</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="NO2.html">
-                      <div class="slider--item-image">
-                        <img src="assets/img/NO2.png" alt="NO2">
-                      </div>
-                      <p class="slider--item-title">Nitrogen dioxide (NO2)</p>
-                      <p class="slider--item-description">Click to learn more</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item">
-                    <a href="CO.html">
-                      <div class="slider--item-image">
-                        <img src="assets/img/CO.png" alt="CO">
-                      </div>
-                      <p class="slider--item-title">Carbon monoxide (CO)</p>
-                      <p class="slider--item-description">Click to learn more</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item">
-                    <a href="SO2.html">
-                      <div class="slider--item-image">
-                        <img src="assets/img/S02.png" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Sulphur dioxide (SO2)</p>
-                      <p class="slider--item-description">Click to learn more</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>What is Air Quality Index (AQI)?</h2>
-                  <p style="font-size: 17px;">The AQI is a rating system that shows the severity of pollution in the air on a scale from 0 to 500. It’s a complex calculation that is administered by the U.S. Environmental Protection Agency. The rating is created by measuring five major pollutants: ground-level ozone, particulate matter (PM2.5), carbon monoxide, nitrogen dioxide and sulfur dioxide. Ground-level ozone and particulate matter, or particle pollution, are the two air pollutants that are most widespread and pose the greatest risk to our health. Those measurements are then calculated into the 0-500 scale to give you one number that reflects how healthy the air is to breathe that day. Particle pollution from wildfire smoke is driving the high AQIs experienced by Chicago, New York City, and so many other cities this summer.</p>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="map">
-              <div class="map--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Know the weather you live in</p>
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="map.html">Click Me</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>How to stay healthy in Poor Air Quality areas</h2>
-              <p style="font-size: 14px;">Air pollution can threaten anyone's health, so stay up to date on the AQI in your area. AQI forecasts and real-time information can be found on EPA’s AirNow Website. AQI values at or below 100 are generally thought of as satisfactory but be aware of how you feel and take steps to help protect yourself whenever needed. </br></br>
-
-                On days when the air quality is orange, red, purple or maroon:</br></br>
-              <ul>
-                <li>Reduce the time you spend outdoors to under 30 minutes when AQI is high. Also, reduce the intensity of outdoor activity. According to the EPA, the chances of being affected by unhealthy levels of air pollution increase the longer a person is active outdoors and the more strenuous the activity. </li>
-                <li>If you must go outdoors, consider wearing a mask. Unfortunately, not all masks are created equal when it comes to particle pollution as a cloth or dust mask are not able to filter out the fine particles. However, well-fitted N95 or KN95 masks have better filtration capabilities and may be beneficial during high AQI days.</li>
-                <li>Keep your air indoors healthy by keeping the windows and doors closed. Run the air conditioning on the recirculate setting, use a portable HEPA air cleaner or, in severe circumstances, creating a clean room.</li>
-              </ul>
-            </p>
-            </div>
-          </li>
+<!-- partial:index.partial.html -->
+<nav class="flex-nav">
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-9 column-md-8">
+        <p id="logo">G12.IMT.MST<span id="highlight">.</span></p>
+      </div>
+      <div class="column-xs-3 column-md-4">
+        <a href="#" class="toggle-nav">Menu <i class="ion-navicon-round"></i></a>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="simulation.html">Simulation</a></li>
+          <li><a href="index.html">Dictionary</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Types of Pollution</li>
-    <li>What is AQI?</li>
-    <li>Weather Map</li>
-    <li>How To</li>
-  </ul>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+</nav>
+<main class="intro-section">
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12">
+        <ul class="slider">
+          <li class="slider-item active">
+            <div class="intro">
+              <a href="#">
+                <h1 class="title"><span class="underline">A* Search</span></h1>
+              </a>
+            </div>
+            <div class="grid vertical">
+              <div class="column-xs-12 column-md-2 hide-mobile">
+              </div>
+              <div class="column-xs-12 column-md-10">
+                <div class="image-holder">
+                  <img src="https://blog.finxter.com/wp-content/uploads/2021/12/Python-blog-A_star-Algorithm.gif">
+                </div>
+                <div class="grid">
+                  <div class="column-xs-12 column-md-9">
+                    <p class="description"> <span id="highlight">Definition: </span>A* search is a pathfinding algorithm that finds the shortest path between a start node and a goal node in a weighted graph. It is an informed search algorithm, which means that it uses a heuristic function to estimate the cost of the remaining path from a node to the goal.</p>
+                    <p class="description"> <span id="highlight">How it works: </span> A* search starts by adding the start node to a priority queue. The priority queue is ordered by the estimated cost of the path from the start node to each node. At each step, the A* search algorithm removes the node with the lowest estimated cost from the priority queue and expands it. This means that the A* search algorithm explores the nodes that it believes are most likely to contain the shortest path first.</p>
+                    <p class="description"> <span id="highlight">Strengths: </span>A* search is generally considered to be the most efficient pathfinding algorithm. It is guaranteed to find the shortest path if the heuristic function is admissible, which means that it never overestimates the cost of the remaining path.</p>
+                    <p class="description"> <span id="highlight">Weaknesses: </span>A* search can be computationally expensive, especially for large graphs. It can also be difficult to find a good heuristic function for some problems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="intro">
+              <a href="#">
+                <h1 class="title"><span class="underline">Dijkstra Search</span></h1>
+              </a>
+            </div>
+            <div class="grid vertical">
+              <div class="column-xs-12 column-md-2 hide-mobile">
+              </div>
+              <div class="column-xs-12 column-md-10">
+                <div class="image-holder">
+                  <img src="https://miro.medium.com/v2/resize:fit:1400/1*3aibaGt1-zimnwreliwX0A.gif">
+                </div>
+                <div class="grid">
+                  <div class="column-xs-12 column-md-9">
+                    <p class="description"> <span id="highlight">Definition: </span>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph. It is a greedy algorithm, which means that it always chooses the node with the least known distance from the source node.</p>
+                    <p class="description"> <span id="highlight">How it works: </span> Dijkstra's algorithm starts by initializing the distance from the source node to all other nodes to infinity. It then adds the source node to a priority queue. At each step, the Dijkstra algorithm removes the node with the lowest known distance from the priority queue and relaxes its neighbors. Relaxing a neighbor means updating its known distance to the source node if the new distance is less than the previous distance.</p>
+                    <p class="description"> <span id="highlight">Strengths: </span>Dijkstra's algorithm is guaranteed to find the shortest paths between all nodes in the graph. It is also relatively efficient, especially for sparse graphs.</p>
+                    <p class="description"> <span id="highlight">Weaknesses: </span>Dijkstra's algorithm can be computationally expensive for large graphs. It can also be difficult to implement in a distributed setting.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="intro">
+              <a href="#">
+                 <h1 class="title"><span class="underline">Best First Search</span></h1>
+              </a>
+            </div>
+            <div class="grid vertical">
+              <div class="column-xs-12 column-md-2 hide-mobile">
+              </div>
+              <div class="column-xs-12 column-md-10">
+                <div class="image-holder">
+                  <img src="https://blog.finxter.com/wp-content/uploads/2021/12/Best-first-search.gif">
+                </div>
+                <div class="grid">
+                  <div class="column-xs-12 column-md-9">
+                    <p class="description"> <span id="highlight">Definition: </span>Best first search is a general search algorithm that explores the nodes with the lowest estimated cost first. The estimated cost can be any function that assigns a non-negative number to each node.</p>
+                    <p class="description"> <span id="highlight">How it works: </span>Best first search starts by adding the start node to a priority queue. The priority queue is ordered by the estimated cost of the node. At each step, the best first search algorithm removes the node with the lowest estimated cost from the priority queue and expands it.</p>
+                    <p class="description"> <span id="highlight">Strengths: </span>Best first search is a general algorithm that can be used to solve a variety of search problems. It is also relatively efficient, especially for problems where the estimated cost function is accurate.</p>
+                    <p class="description"> <span id="highlight">Weaknesses: </span>Best first search is not guaranteed to find the optimal solution to a problem. It can also be computationally expensive for large problems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="intro">
+              <a href="#">
+                <h1 class="title"><span class="underline">Bidirectional Search</span></h1>
+              </a>
+            </div>
+            <div class="grid vertical">
+              <div class="column-xs-12 column-md-2 hide-mobile">
+              </div>
+              <div class="column-xs-12 column-md-10">
+                <div class="image-holder">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSM2tmMNQMxBXi4Y_jO_AHTBUAg9h6tsq6-w&usqp=CAU">
+                </div>
+                <div class="grid">
+                  <div class="column-xs-12 column-md-9">
+                    <div class="intro show-mobile">
+                    </div>
+                    <p class="description"> <span id="highlight">Definition: </span>Bidirectional search is a search algorithm that starts from the start node and the goal node simultaneously and works its way towards each other. It is a depth-first search algorithm that uses a queue to keep track of the nodes that have been visited.</p>
+                    <p class="description"> <span id="highlight">How it works: </span>Bidirectional search starts by adding the start node and the goal node to a queue. At each step, the bidirectional search algorithm removes the node with the least estimated cost from the queue and expands it. If the two nodes meet, then the bidirectional search algorithm has found a solution.</p>
+                    <p class="description"> <span id="highlight">Strengths: </span>Bidirectional search is guaranteed to find the shortest path between the start node and the goal node if the graph is acyclic. It is also relatively efficient, especially for problems where the estimated cost function is accurate.</p>
+                    <p class="description"> <span id="highlight">Weaknesses: </span>Bidirectional search can be computationally expensive for large problems. It can also be difficult to implement in a distributed setting.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      <div class="grid">
+        <div class="column-xs-12">
+          <div class="controls">
+              <button class="previous">
+                <span class="visually-hidden">Previous</span>
+                <span class="icon arrow-left" aria-hidden="true"></span>
+              </a>
+              <button class="next">
+                <span class="visually-hidden">Next</span>
+                <span class="icon arrow-right" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <script  src="JS/script.js"></script>
 </body>
 </html>
